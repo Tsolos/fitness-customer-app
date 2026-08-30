@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "fitness_customer_app (Chrome, port 5000)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "chrome",
+      "args": [
+        "--web-port=5000",
+        "--dart-define=API_BASE_URL=https://localhost:44317"
+      ]
+    },
+    {
+      "name": "fitness_customer_app (default device)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--dart-define=API_BASE_URL=https://localhost:44317"
+      ]
+    },
+    {
+      "name": "fitness_customer_app (Android Emulator)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--dart-define=API_BASE_URL=https://10.0.2.2:44317"
+      ]
+    },
+    {
+      "name": "fitness_customer_app (profile mode)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "flutterMode": "profile",
+      "args": [
+        "--dart-define=API_BASE_URL=https://localhost:44317"
+      ]
+    }
+  ]
+}
