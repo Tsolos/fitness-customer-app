@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../../../core/router/route_paths.dart';
 import '../../../../core/services/google_auth_service.dart';
+import '../../../../core/widgets/brand_mark.dart';
 import '../../../gym/domain/entities/gym.dart';
 import '../../../gym/presentation/providers/gym_providers.dart';
 import '../../../gym/presentation/widgets/gym_picker_sheet.dart';
@@ -138,7 +139,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     const SizedBox(height: 32),
-                    Icon(Icons.fitness_center, size: 64, color: Theme.of(context).colorScheme.primary),
+                    const Center(child: BrandMark(size: 72)),
                     const SizedBox(height: 12),
                     Text(
                       'Καλωσήρθατε',

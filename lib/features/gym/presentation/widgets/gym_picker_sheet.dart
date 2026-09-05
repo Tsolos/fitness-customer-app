@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../../core/error/failures.dart';
+import '../../../../core/widgets/brand_mark.dart';
 import '../../../../core/widgets/error_view.dart';
 import '../../../../core/widgets/loading_indicator.dart';
 import '../../domain/entities/gym.dart';
@@ -74,7 +75,7 @@ class _GymPickerSheetState extends ConsumerState<GymPickerSheet> {
                     itemBuilder: (context, index) {
                       final gym = filtered[index];
                       return ListTile(
-                        leading: const Icon(Icons.fitness_center),
+                        leading: const BrandMark(size: 32),
                         title: Text(gym.title),
                         onTap: () => Navigator.of(context).pop<Gym>(gym),
                       );
