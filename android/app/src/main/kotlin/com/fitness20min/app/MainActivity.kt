@@ -1,4 +1,4 @@
-package com.example.fitness_customer_app
+package com.fitness20min.app
 
 import io.flutter.embedding.android.FlutterFragmentActivity
 
